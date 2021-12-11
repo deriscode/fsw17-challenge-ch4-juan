@@ -43,6 +43,10 @@
 	.top-scores__heading {
 		padding-top: 7.254rem;
 	}
+
+	.top-scores__review {
+		text-align: left;
+	}
 	/* End Top Scores */
 
 	/* Start Newsletter */

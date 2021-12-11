@@ -101,12 +101,7 @@ body {
 /* Start Gallery */
 
 .gallery {
-	background-image: radial-gradient(
-			136.03% 54.57% at 50% 48.04%,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(0, 0, 0, 0) 60.63%,
-			#080a0b 99.74%
-		),
+	background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%),
 		url("../assets/bg-image2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -261,12 +256,7 @@ body {
 /* Start System */
 
 .system {
-	background-image: radial-gradient(
-			33.26% 45% at 64.32% 47.1%,
-			rgba(255, 255, 255, 0) 3.36%,
-			rgba(0, 0, 0, 0) 19.22%,
-			#080a0b 99.74%
-		),
+	background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%),
 		url(../assets/bg-image4.png);
 	background-size: cover;
 	background-position: 70%;
@@ -315,12 +305,7 @@ body {
 /* Start Top-Scores */
 
 .top-scores {
-	background-image: radial-gradient(
-			70.52% 37.27% at 24.21% 47.47%,
-			rgba(35, 15, 15, 0) 0%,
-			rgba(0, 0, 0, 0) 51.1%,
-			#080a0b 99.74%
-		),
+	background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080a0b 99.74%),
 		url(../assets/bg-image3.jpg);
 	background-repeat: no-repeat;
 }
@@ -359,6 +344,7 @@ body {
 	border-radius: 10px;
 	padding: 1.25rem;
 	font-family: "Open Sans", sans-serif;
+	text-align: center;
 }
 
 .top-scores__review:nth-child(1) {
@@ -374,8 +360,8 @@ body {
 }
 
 .top-scores__review .top-scores__review-img {
-	height: 65.27px;
-	width: 65.27px;
+	height: 50px;
+	width: 50px;
 	box-shadow: 10px 3px #ffb548;
 	object-fit: none;
 }
