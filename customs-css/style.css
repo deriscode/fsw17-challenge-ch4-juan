@@ -87,6 +87,10 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+.header__title .btn:focus {
+	box-shadow: 0 0 10px #f3af34 !important;
+}
+
 .header__title-story-btn {
 	font-family: "Open Sans", sans-serif;
 	padding: 14.625rem 0 5.32rem;
