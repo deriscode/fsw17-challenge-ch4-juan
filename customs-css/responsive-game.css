@@ -7,4 +7,74 @@
 	}
 
 	/* End Game-Header */
+
+	/* Start Game-Content */
+
+	.game-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.game-content__username {
+		font-size: 36px;
+	}
+
+	.game-content__images {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.game-content__images img {
+		max-width: 100px;
+		width: 100%;
+		margin: 2rem auto;
+	}
+
+	.game-content__sign {
+		margin: auto;
+	}
+
+	.game-content__sign h1 {
+		font-size: 85px;
+	}
+
+	.game-content__refresh {
+		margin: auto;
+		grid-column: 1 / span 3;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Kecil */
+@media (min-width: 991.98px) {
+	/* Start Game-Content */
+
+	.game-content {
+		padding: 0 2rem;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Sedang */
+@media (min-width: 1199.98px) {
+	/* Start Game-Content */
+
+	.game-content__sign h1 {
+		font-size: 144px;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Besar */
+@media (min-width: 1439.98px) {
+	/* Start Game-Content */
+
+	.game-content {
+		padding: 0 10rem;
+	}
+
+	/* End Game-Content */
 }

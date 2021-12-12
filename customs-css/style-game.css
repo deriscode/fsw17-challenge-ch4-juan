@@ -35,3 +35,60 @@ body {
 }
 
 /* End Game-Header */
+
+/* Start Game-Content */
+
+.game-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 2rem 0;
+}
+
+.game-content__player1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+}
+
+.game-content__username {
+	font-size: 24px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	margin: auto;
+}
+
+.grid-content__images {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-content__images img {
+	max-width: 80px;
+	width: 100%;
+	margin: 2rem 0.7rem 0;
+}
+
+.game-content__sign {
+	margin: 2rem auto;
+}
+
+.game-content__sign h1 {
+	font-size: 75px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	color: #bd0000;
+}
+
+.game-content__computer {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+}
+
+.game-content__refresh {
+	max-width: 80px;
+	width: 100%;
+	margin: 3rem auto;
+}
+
+/* End Game-Content */
