@@ -1,0 +1,10 @@
+/* Resolusi Tablet */
+@media (min-width: 767.98px) {
+	/* Start Game-Header */
+
+	.game-header h1 {
+		font-size: 36px;
+	}
+
+	/* End Game-Header */
+}
