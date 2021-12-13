@@ -34,9 +34,13 @@
 			<div class="game-content__player1">
 				<h1 class="game-content__username">PLAYER 1</h1>
 				<div class="game-content__images">
-					<button class="game-content__image" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
-					<button class="game-content__image" type="button"><img src="assets/kertas.png" alt="Kertas" class="img-fluid" /></button>
-					<button class="game-content__image" type="button"><img src="assets/gunting.png" alt="Gunting" class="img-fluid" /></button>
+					<button id="batu" class="game-content__image" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
+					<button id="kertas" class="game-content__image" type="button">
+						<img src="assets/kertas.png" alt="Kertas" class="img-fluid" />
+					</button>
+					<button id="gunting" class="game-content__image" type="button">
+						<img src="assets/gunting.png" alt="Gunting" class="img-fluid" />
+					</button>
 				</div>
 			</div>
 			<!-- End Game-Content Player 1 -->
@@ -54,9 +58,13 @@
 			<div class="game-content__computer">
 				<h1 class="game-content__username">COM</h1>
 				<div class="game-content__images">
-					<button class="game-content__image" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
-					<button class="game-content__image" type="button"><img src="assets/kertas.png" alt="Kertas" class="img-fluid" /></button>
-					<button class="game-content__image" type="button"><img src="assets/gunting.png" alt="Gunting" class="img-fluid" /></button>
+					<button class="game-content__image pilihan-com" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
+					<button class="game-content__image pilihan-com" type="button">
+						<img src="assets/kertas.png" alt="Kertas" class="img-fluid" />
+					</button>
+					<button class="game-content__image pilihan-com" type="button">
+						<img src="assets/gunting.png" alt="Gunting" class="img-fluid" />
+					</button>
 				</div>
 			</div>
 			<!-- End Game-Content Computer -->
@@ -69,5 +77,8 @@
 
 		<!-- Bootstrap Javascript Bundle with Popper -->
 		<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Game Code -->
+		<script src="js/app.js"></script>
 	</body>
 </html>

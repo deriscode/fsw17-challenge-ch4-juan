@@ -68,6 +68,7 @@ body {
 	padding: 20px;
 	background-color: transparent;
 	border: none;
+	border-radius: 30px;
 	overflow: hidden;
 	outline: none;
 	margin: 2rem 0.7rem 0;
@@ -83,7 +84,6 @@ body {
 
 .game-content__player1 .game-content__image:hover {
 	background: #c4c4c4;
-	border-radius: 30px;
 	cursor: pointer;
 }
 
