@@ -2,16 +2,18 @@ const batuPlayer = document.getElementById("batu");
 const kertasPlayer = document.getElementById("kertas");
 const guntingPlayer = document.getElementById("gunting");
 
+const buttonCom = document.querySelectorAll(".pilihan-com");
+
 const sign = document.querySelector(".game-content__sign h1:nth-child(1)");
 const resultWin = document.querySelector(".game-content__sign h1:nth-child(2)");
 const resultLose = document.querySelector(".game-content__sign h1:nth-child(3)");
 const resultDraw = document.querySelector(".game-content__sign h1:nth-child(4)");
 
+const refresh = document.getElementById("refresh");
+
 function getPilihanComputer() {
 	const pilihan = ["batu", "kertas", "gunting"];
 	const pilihanRandom = Math.floor(Math.random(pilihan) * 3);
-
-	const buttonCom = document.querySelectorAll(".pilihan-com");
 
 	if (pilihanRandom == 0) {
 		buttonCom.item(0).style.backgroundColor = "#c4c4c4";
@@ -98,21 +100,34 @@ function game(pilihanPlayer) {
 			guntingPlayer.style.backgroundColor = "transparent";
 			return draw();
 		case "guntinggunting":
-			batuPlayer.style.backgroundColor = "#c4c4c4";
+			guntingPlayer.style.backgroundColor = "#c4c4c4";
 			batuPlayer.style.backgroundColor = "transparent";
 			kertasPlayer.style.backgroundColor = "transparent";
 			return draw();
 	}
 }
 
-batuPlayer.addEventListener("click", function pickBatu() {
+batuPlayer.addEventListener("click", () => {
 	game("batu");
 });
 
-kertasPlayer.addEventListener("click", function pickKertas() {
+kertasPlayer.addEventListener("click", () => {
 	game("kertas");
 });
 
-guntingPlayer.addEventListener("click", function pickGunting() {
+guntingPlayer.addEventListener("click", () => {
 	game("gunting");
+});
+
+refresh.addEventListener("click", () => {
+	batuPlayer.style.backgroundColor = "transparent";
+	kertasPlayer.style.backgroundColor = "transparent";
+	guntingPlayer.style.backgroundColor = "transparent";
+	buttonCom.item(0).style.borderRadius = "transparent";
+	buttonCom.item(1).style.backgroundColor = "transparent";
+	buttonCom.item(2).style.backgroundColor = "transparent";
+	sign.style.display = "block";
+	resultWin.style.display = "none";
+	resultLose.style.display = "none";
+	resultDraw.style.display = "none";
 });
