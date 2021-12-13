@@ -85,6 +85,11 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Open Sans", sans-serif;
+	transition: transform 0.2s;
+}
+
+.header__title .btn:hover {
+	transform: scale(1.2);
 }
 
 .header__title .btn:focus {
